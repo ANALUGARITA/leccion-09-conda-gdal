@@ -61,3 +61,10 @@ ogrinfo --help
 ### Ejemplos de uso de comandos
 #### ogrinfo
 El comando [ogrinfo](https://gdal.org/programs/ogrinfo.html) despliega información acerca de una fuente de datos vectoriales.
+
+```shell
+# Información sobre la capa de países de Natural Earth (https://www.naturalearthdata.com/)
+# disponible en https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/110m/cultural/ne_110m_admin_0_countries.zip
+
+
+```
