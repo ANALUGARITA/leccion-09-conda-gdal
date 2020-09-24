@@ -86,4 +86,5 @@ ogrinfo -al -so cantones-alajuela.geojson
 $ conda deactivate
 ```
 
-Puede encontrar la referencia de todos los comandos para manejo de ambientes de Conda en [https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html).
+Puede encontrar la referencia de todos los comandos para manejo de ambientes de Conda en:  
+[https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html).
