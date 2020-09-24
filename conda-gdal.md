@@ -1,12 +1,10 @@
-# El sistema Conda para administración de paquetes; la biblioteca GDAL para lectura y escritura de datos geoespaciales
+# El sistema Conda para administración de paquetes
 
 ## Recursos de interés
 - Sitio oficial de Conda: [Conda -- Conda documentation](https://conda.io/)
 - Comandos para manejo de ambientes en Conda: [Managing environments -- conda](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
 - Tutorial sobre ambientes virtuales de Python: [(Tutorial) Virtual Environment in Python - DataCamp](https://www.datacamp.com/community/tutorials/virtual-environment-in-python)
 - Comparación entre Conda y Pip: [Understanding Conda and Pip](https://www.anaconda.com/blog/understanding-conda-and-pip)
-
-- Sitio oficial de GDAL: [GDAL](https://gdal.org/)
 
 ## Sistemas administradores de de paquetes
 Un [paquete de software](https://es.wikipedia.org/wiki/Paquete_de_software) es un conjunto de programas o bibliotecas, ya sea ejecutables o de código fuente, que se distribuyen conjuntamente. Los paquetes pueden distribuirse a nivel de sistema operativo o de lenguajes de programación. Además del software, los paquetes incluyen otra información importante, como el nombre completo del paquete, una descripción de su funcionalidad, el número de versión, el distribuidor del software, la [suma de verificación (*checksum*)](https://en.wikipedia.org/wiki/Checksum) y una lista de otros paquetes requeridos para el correcto funcionamiento del software. Estos metadatos normalmente se almacenan en una base de datos local.
