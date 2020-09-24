@@ -17,6 +17,23 @@ A pesar de que GDAL está programada en C/C++, cuenta con una interfaz de progra
 ## Utilitarios de línea de comandos
 Los [utilitarios de línea de comandos de GDAL](https://gdal.org/programs/) permiten ejecutar tareas de geoprocesamiento y de conversión entre formatos geoespaciales sin utilizar una interfaz gráfica o un lenguaje de programación. Están disponibles para varios sistemas operativos, incluyendo Windows, macOS y Unix/Linux.
 
+**Creación del ambiente**
+A continuación, se crea un ambiente Conda en el que se instalan los utilitarios de línea de comandos de [Geospatial Data Abstraction Library (GDAL)](https://gdal.org/) y se presentan varios ejemplos de su uso.
+```shell
+# Actualización de Conda
+conda update -n base -c defaults conda
+
+# Creación de un ambiente de nombre "comandos-gdal"
+conda create -n comandos-gdal
+
+# Activación del ambiente
+conda activate comandos-gdal
+
+# Instalación de paquetes
+# Binarios de GDAL desde el canal conda-forge
+conda install -c conda-forge gdal
+```
+
 ### Consideraciones generales
 Los utilitarios de GDAL comparten una serie de [opciones comunes](https://gdal.org/programs/raster_common_options.html#raster-common-options) que pueden visualizarse con la opción `-- help-general`. Por ejemplo:
 ```shell
