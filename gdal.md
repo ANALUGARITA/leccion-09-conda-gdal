@@ -70,3 +70,18 @@ ogrinfo -al -so /vsizip/ne_110m_admin_0_countries.zip
 # Información sobre la capa descomprimida en formato shapefile
 ogrinfo -al -so ne_110m_admin_0_countries.shp
 ```
+
+#### ogr2ogr
+El comando [ogr2ogr](https://gdal.org/programs/ogr2ogr.html) realiza conversiones entre formatos de fuentes de datos geoespaciales. A la vez, realiza otras operaciones como selección de atributos y geometrías, filtrado por criterios espaciales y no espaciales, reproyección y validación de geometrías, entre otras.
+
+Conversión entre formatos:
+```shell
+# Conversión de SHP a GeoJSON
+ogr2ogr -f GeoJSON ne_110m_admin_0_countries.geojson ne_110m_admin_0_countries.shp
+```
+
+Descarga desde un servicio WFS, validación de geometrías y reproyección:
+```shell
+# Descarga de la capa de cantones del IGN en el SNIT (https://www.snitcr.go.cr/)
+ogr2ogr -f GeoJSON -s_srs EPSG:5367 -t_srs EPSG:4326 -makevalid cantones.geojson WFS:"http://geos.snitcr.go.cr/be/IGN_5/wfs" "IGN_5:limitecantonal_5k"
+```
