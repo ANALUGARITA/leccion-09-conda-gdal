@@ -1,6 +1,5 @@
 # La biblioteca GDAL para lectura y escritura de datos geoespaciales
 
-
 ## Recursos
 * Sitio oficial de GDAL: [GDAL](https://gdal.org/)
 * Página oficial de los utilitarios de línea de comandos de GDAL: [Programs -- GDAL documentation](https://gdal.org/programs/)
@@ -8,6 +7,7 @@
 * Ejemplos de comandos: [GDAL/OGR cheat sheet](https://github.com/glw/gdalcheatsheet)
 * Ejemplos de comandos: [OGR2OGR Cheatsheet](https://www.bostongis.com/PrinterFriendly.aspx?content_name=ogr_cheatsheet)
 
+# Características generales
 [Geospatial Data Abstraction Library (GDAL)](https://gdal.org/) es una biblioteca para leer y escribir datos geoespaciales en varios formatos [raster](https://gdal.org/drivers/raster/) y [vectoriales](https://gdal.org/drivers/vector/). En ocasiones, también es denominada GDAL/OGR, en donde GDAL se refiere a la funcionalidad para datos raster y OGR (sigla antes usada para *OpenGIS Simple Features Reference Implementation*) a la correspondiente a datos vectoriales. En este documento, se utilizará la sigla GDAL para referirse a ambos casos. GDAL es distribuida por la [Open Source Geospatial Foundation (OSGeo)](https://www.osgeo.org/) con una [licencia X/MIT](https://gdal.org/license.html#license).
 
 GDAL cuenta con un único [modelo abstracto de datos raster](https://gdal.org/user/raster_data_model.html) y un único [modelo abstracto de datos vectoriales](https://gdal.org/user/vector_data_model.html), lo que permite programar aplicaciones geoespaciales sin tener que ocuparse de las particularidades de cada formato que se utilice (GeoTIFF, NetCDF, ESRI Shapefile, GeoJSON, etc.).
