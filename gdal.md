@@ -62,9 +62,9 @@ ogrinfo --help
 #### ogrinfo
 El comando [ogrinfo](https://gdal.org/programs/ogrinfo.html) despliega información acerca de una fuente de datos vectoriales.
 
-Los siguientes comandos despliegan información sobre la [capa de países](https://www.naturalearthdata.com/downloads/110m-cultural-vectors/110m-admin-0-countries/) de [Natural Earth](https://www.naturalearthdata.com/), tanto para el formato comprimido como para el formato shapefile.
+Los siguientes comandos despliegan información sobre la [capa de países](https://www.naturalearthdata.com/downloads/110m-cultural-vectors/110m-admin-0-countries/) de [Natural Earth](https://www.naturalearthdata.com/), tanto para el formato comprimido como para el formato shapefile. En el caso comprimido, note el uso de [/vsizip/](https://gdal.org/user/virtual_file_systems.html), para sistemas de archivos virtuales.
 ```shell
-# Información sobre la capa comprimida en formato ZIP (note el uso de vszip para sistemas de archivos virtuales)
+# Información sobre la capa comprimida en formato ZIP
 ogrinfo -al -so /vsizip/ne_110m_admin_0_countries.zip
 
 # Información sobre la capa descomprimida en formato shapefile
