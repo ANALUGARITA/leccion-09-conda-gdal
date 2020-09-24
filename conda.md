@@ -54,6 +54,7 @@ conda activate python
 
 # Python
 python
+# Note la versión de Python y salga de la línea de comandos del interpretador con quit()
 
 # Desactivación del ambiente
 $ conda deactivate
