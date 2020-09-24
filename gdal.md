@@ -76,6 +76,9 @@ El comando [ogr2ogr](https://gdal.org/programs/ogr2ogr.html) realiza conversione
 
 Conversión entre formatos:
 ```shell
+# Despliegue de la lista de formatos vectoriales soportados por GDAL
+ogr2ogr --formats
+
 # Conversión de SHP a GeoJSON
 ogr2ogr -f GeoJSON ne_110m_admin_0_countries.geojson ne_110m_admin_0_countries.shp
 ```
@@ -84,4 +87,26 @@ Descarga desde un servicio WFS, validación de geometrías y reproyección:
 ```shell
 # Descarga de la capa de cantones del IGN en el SNIT (https://www.snitcr.go.cr/)
 ogr2ogr -f GeoJSON -s_srs EPSG:5367 -t_srs EPSG:4326 -makevalid cantones.geojson WFS:"http://geos.snitcr.go.cr/be/IGN_5/wfs" "IGN_5:limitecantonal_5k"
+
+# Información sobre la capa descargada
+ogrinfo -al -so cantones.geojson
+```
+
+Filtrado por atributos:
+```shell
+# Filtrado y extracción de los cantones con área >= 2000 km2
+ogr2ogr -where "area >= 2000" cantones-grandes.geojson cantones.geojson
+
+# Filtrado y extracción de los cantones de la provincia de Heredia
+ogr2ogr -where "provincia = 'Heredia'" cantones-heredia.geojson cantones.geojson
+
+# Filtrado y extracción de los cantones con área >= 2000 km2 de la provincia de Limón
+ogr2ogr -where "area >= 2000 AND provincia = 'Limón'" cantones-grandes-limon.geojson cantones.geojson
+```
+
+
+Selección de atributos y filtrado:
+```shell
+# Extracción de los campos de provincia, cantón y área de los cantones de la provincia de Alajuela
+ogr2ogr -select "provincia, canton, area" -where "provincia = 'Alajuela'" cantones-alajuela.geojson cantones.geojson
 ```
