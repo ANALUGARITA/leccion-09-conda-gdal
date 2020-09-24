@@ -19,10 +19,10 @@ Los [utilitarios de línea de comandos de GDAL](https://gdal.org/programs/) perm
 
 ### Consideraciones generales
 Los utilitarios de GDAL comparten una serie de [opciones comunes](https://gdal.org/programs/raster_common_options.html#raster-common-options) que pueden visualizarse con la opción `-- help-general`. Por ejemplo:
-```bash
-$ ogrinfo --help-general
+```shell
+ogrinfo --help-general
 ```
-```bash
+```shell
 Generic GDAL utility command options:
   --version: report version of GDAL in use.
   --license: report GDAL license info.
@@ -37,6 +37,6 @@ Generic GDAL utility command options:
   ```
   
 Para obtener ayuda acerca de un comando particular, puede usarse la opción `-- help`. Por ejemplo:
-```bash
-$ ogrinfo --help
+```shell
+ogrinfo --help
 ```
