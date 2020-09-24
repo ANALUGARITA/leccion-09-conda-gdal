@@ -1,4 +1,4 @@
-# El sistema Conda para administración de paquetes
+# El sistema Conda para administración de paquetes; la biblioteca GDAL para lectura y escritura de datos geoespaciales
 
 ## Recursos de interés
 - Sitio oficial de Conda: [Conda -- Conda documentation](https://conda.io/)
