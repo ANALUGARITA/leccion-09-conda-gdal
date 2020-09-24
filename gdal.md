@@ -64,7 +64,7 @@ El comando [ogrinfo](https://gdal.org/programs/ogrinfo.html) despliega informaci
 
 Los siguientes comandos despliegan información sobre la [capa de países](https://www.naturalearthdata.com/downloads/110m-cultural-vectors/110m-admin-0-countries/) de [Natural Earth](https://www.naturalearthdata.com/), tanto para el formato comprimido como para el formato shapefile.
 ```shell
-# Capa comprimida en formato ZIP
+# Capa comprimida en formato ZIP (note el uso de vszip para sistemas de archivos virtuales)
 ogrinfo -al -so /vsizip/ne_110m_admin_0_countries.zip
 
 # Capa descomprimida
