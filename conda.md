@@ -27,9 +27,7 @@ Una importante característica de Conda es que permite la creación de ambientes
 Ejecute los siguientes comandos desde la línea de comandos (*prompt*) de Anaconda.
 
 ##### Ambiente para utilitarios de línea de comandos de GDAL
-[Geospatial Data Abstraction Library (GDAL)](https://gdal.org/) es una biblioteca para leer y escribir datos geoespaciales en varios formatos [raster](https://gdal.org/drivers/raster/) y [vectoriales](https://gdal.org/drivers/vector/). A pesar de que GDAL está programada en C/C++, cuenta con una interfaz de programación de aplicaciones (API) para varios lenguajes de programación, incluyendo C, C++, Python y Java. Además, ofrece un conjunto de [utilitarios de línea de comandos](https://gdal.org/programs/) cuyas [distribuciones binarias](https://gdal.org/download.html#binaries) están disponibles para varios sistemas operativos, incluyendo Windows, macOS y Linux.
-
-A continuación, se crea un ambiente Conda en el que se instalan los utilitarios de línea de comandos de GDAL y se presentan varios ejemplos de su uso.
+A continuación, se crea un ambiente Conda en el que se instalan los utilitarios de línea de comandos de [Geospatial Data Abstraction Library (GDAL)](https://gdal.org/) y se presentan varios ejemplos de su uso.
 
 **Creación del ambiente**
 ```shell
